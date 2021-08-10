@@ -1,0 +1,27 @@
+@import "./variables";
+
+label,
+input {
+	display: block;
+}
+
+.photo-form__title {
+	font-size: 1.5rem;
+	color: #333333;
+	margin-bottom: 1em;
+}
+
+.photo-form__content {
+	width: 25rem;
+	margin-bottom: 1em;
+
+	input {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	label {
+		color: #4f4f4f;
+
+	}
+}

@@ -1,0 +1,35 @@
+@import "../variables.scss";
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header button:last-of-type {
+  margin-left: auto;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+
+	div {
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+		p {
+		  margin: 0;
+		  font-weight: 800;
+		  line-height: 19px;
+		}
+
+		span {
+			font-weight: 500;
+			font-size: 9px;
+			line-height: 12px;
+		}
+	}
+}

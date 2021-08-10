@@ -1,0 +1,42 @@
+@import "../variables.scss";
+
+button {
+	cursor: pointer;
+	border: none;
+	font-weight: bold;
+	line-height: 22px;
+	font-size: 16px;
+	border-radius: 12px;
+	padding: 1rem 1.7rem;
+}
+
+@each $name, $color in $theme-colors {
+	.btn-#{$name} {
+		background-color: $color;
+		border-color: $color;
+
+		@if $name == light {
+			color: $muted;
+
+			&:hover {
+				color: darken($color, 40);
+			}
+		} @else {
+			color: $light;
+			filter: drop-shadow(0px 4px 10px rgba($color, 0.2));
+
+			&:hover {
+				background-color: darken($color, 5%);
+			}
+		}
+	}
+}
+
+@each $variant in $btn-variants {
+	.btn-#{$variant} {
+		background-color: transparent !important;
+		border-style: solid;
+		border-width: 1px;
+		// border-color: $color !important;
+	}
+}

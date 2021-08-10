@@ -1,0 +1,14 @@
+@import "../variables";
+
+.list-grid {
+	margin-top: 4em;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: 3%;
+}
+
+.list-column {
+	display: grid;
+	row-gap: 2em;
+	align-content: flex-start;
+}
